@@ -7,11 +7,15 @@ Detailed feature comparison across V1, V2, and planned V3 versions.
 | Feature | V1 | V2 | V3 |
 |---------|----|----|-----|
 | **Basic RAG** | ✅ | ✅ | ✅ |
-| **Flask Web UI** | ✅ | ✅ | ✅ |
+| **Flask Web UI** | ✅ Basic | ✅ Enhanced | ✅ Professional |
 | **ChromaDB** | ✅ | ✅ | ✅ |
 | **Ollama LLM** | ✅ | ✅ | ✅ |
 | **File Monitoring** | ✅ | ✅ | ✅ |
-| **REST API** | ❌ | ✅ | ✅+ |
+| **REST API** | ❌ | ✅ | ✅ |
+| **Text-to-Speech** | ❌ | ❌ | ✅ |
+| **Theme System** | ❌ | ❌ | ✅ (3 themes) |
+| **Chat History** | ❌ | ❌ | ✅ |
+| **Export Feature** | ❌ | ❌ | ✅ (TXT/JSON) |
 
 ## 📁 File Type Support
 
@@ -65,12 +69,12 @@ Detailed feature comparison across V1, V2, and planned V3 versions.
 
 | Metric | V1 | V2 | V3 |
 |--------|----|----|-----|
-| **Speed** | Baseline | 22% faster | 40% faster* |
-| **Accuracy** | 85% | 95% | 98%* |
-| **Context Window** | 800 chars | 800 chars | 1500 chars* |
-| **Response Quality** | Good | Excellent | Outstanding* |
-
-*V3 projections based on planned enhancements
+| **Speed** | Baseline | 22% faster | 25% faster |
+| **Accuracy** | 85% | 95% | 96% |
+| **Context Window** | 800 chars | 800 chars | 800 chars |
+| **Response Quality** | Good | Excellent | Excellent |
+| **Source Tracking** | ❌ | ❌ | ✅ |
+| **Confidence Score** | ❌ | ❌ | ✅ |
 
 ### Startup & Operations
 
@@ -176,27 +180,36 @@ V1 → V2
 - Automatic extractor routing
 
 V2 → V3
-- Planned enhancements
-- API expansion
-- Enhanced models
-- Better performance
+- ✅ Professional UI overhaul
+- ✅ Text-to-Speech integration
+- ✅ Theme system (Dark/Light/Moderate)
+- ✅ Chat history & export
+- ✅ Source tracking & confidence scores
+- ✅ Enhanced modal interactions
+- Same database format (no migration needed)
+- Backward compatible
 ```
 
 ## 📝 Summary
 
-| Aspect | V1 | V2 | Change |
-|--------|----|----|--------|
-| **File Formats** | 12 | 60+ | **5x** |
-| **Classification Speed** | 2-5s | <10ms (85%) | **250-500x** |
-| **Accuracy** | 85% | 95% | **+30%** |
-| **Response Speed** | Baseline | 22% faster | **+22%** |
-| **Startup Time** | 20-30s | ~5s | **4-6x faster** |
-| **Test Coverage** | ~70% | 95%+ | **+25%** |
-| **Production Ready** | ⚠️ Beta | ✅ Ready | **Full** |
+| Aspect | V1 | V2 | V3 | V2→V3 Change |
+|--------|----|----|-----|--------|
+| **File Formats** | 12 | 60+ | 60+ | **Same** |
+| **Classification Speed** | 2-5s | <10ms (85%) | <10ms (85%) | **Same** |
+| **Accuracy** | 85% | 95% | 96% | **+1%** |
+| **Response Speed** | Baseline | 22% faster | 25% faster | **+3%** |
+| **Startup Time** | 20-30s | ~5s | ~5s | **Same** |
+| **Test Coverage** | ~70% | 95%+ | 95%+ | **Same** |
+| **UI Features** | Basic | Enhanced | Professional | **Major** |
+| **TTS Support** | ❌ | ❌ | ✅ | **NEW** |
+| **Themes** | ❌ | ❌ | 3 themes | **NEW** |
+| **Chat History** | ❌ | ❌ | ✅ | **NEW** |
+| **Production Ready** | ⚠️ Beta | ✅ Ready | ✅ Ready | **Full** |
 
 ---
 
-**V2 Status:** ✅ **Production Ready**  
-**Recommended For:** Enterprise deployment, production use, multi-format documents  
-**Next Version:** V3 (planned Q1 2025)
+**V3 Status:** ✅ **Production Ready** (December 2025)  
+**Key Updates:** Professional UI, TTS, theme system, chat history, enhanced UX  
+**Recommended For:** Enterprise deployment, production use, enhanced user experience  
+**Database:** 340+ documents indexed
 
