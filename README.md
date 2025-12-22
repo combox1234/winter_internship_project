@@ -6,11 +6,11 @@ This repository contains the version-by-version evolution of the "DocuMind AI" U
 ## Versions
 
 ### 📂 [V5](./V5) (Latest)
-**"Dual LLM & Security Upgrade"**
-- **Dual LLM Architecture**: 1B model for Classification + 8B model for Chat.
-- **JWT Authentication**: Secured API endpoints.
+**"Deployment Ready Clean-Up"**
+- **Clean Architecture**: Refined codebase structure for deployment.
 - **Strict RAG**: Zero-hallucination policy with direct citations.
 - **Modular Docs**: Segregated documentation in `.md` folders.
+- **Security Ready**: Prepared for future JWT integration.
 
 ### 📂 [V4](./V4)
 **"Stability & UI Clean Up"**
