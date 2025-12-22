@@ -6,11 +6,11 @@
 - **Autonomous File Sorting**: Automatically classifies files (PDFs, PPTs, etc.) into domains (Technology, Finance, Legal, etc.) and moves them to organized folders.
 - **RAG-Based Chat**: Query your documents using natural language. The system retrieves relevant chunks and generates accurate, cited answers.
 - **Offline & Private**: Runs 100% locally using models like Llama 3 and Phi-3. No data leaves your machine.
-- **Dual LLM Architecture**: Optimized performance using a lightweight model for sorting (e.g., Llama 3.2 1B) and a smarter model for chat (e.g., Llama 3.1 8B).
-- **JWT Authentication**: Secure API endpoints with token-based access.
+- **Deployment Ready**: Cleaned up code structure, prepared for production.
+- **Future Ready**: Architecturally prepared for Dual LLM and JWT (Planned for V6).
 
 ## 🛠️ Tech Stack
-- **Backend**: Python, Flask, Flask-JWT-Extended
+- **Backend**: Python, Flask
 - **AI/LLM**: Ollama (Llama 3, Phi-3, etc.), PyMuPDF (Extraction)
 - **Vector DB**: ChromaDB (Semantic Search)
 - **Monitoring**: Watchdog (Real-time file system monitoring)
@@ -37,8 +37,7 @@ pip install -r requirements.txt
 ### 3. Initialize Models
 Pull the recommended models in Ollama:
 ```bash
-ollama pull llama3.2:1b  # For classification
-ollama pull llama3.1:8b  # For chat
+ollama pull llama3.2  # For all operations
 ```
 
 ## 🏃‍♂️ Usage
